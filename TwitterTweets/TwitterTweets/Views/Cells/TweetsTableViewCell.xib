@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="211" id="0A0-OI-8Zg" customClass="TweetsTableViewCell" customModule="TwitterTweets" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="211"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0A0-OI-8Zg" id="OUc-8L-0X2">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="210.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hak-ZT-Uyd">
+                        <rect key="frame" x="75" y="15" width="300" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6eN-zO-Rg1">
+                        <rect key="frame" x="75" y="41" width="300" height="0.0"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.62745098040000002" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="SrO-jg-pNH" customClass="ImageViewWithURLString" customModule="TwitterTweets" customModuleProvider="target">
+                        <rect key="frame" x="175" y="90.5" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" priority="750" constant="100" id="5NV-Ez-GW0"/>
+                            <constraint firstAttribute="height" priority="750" constant="100" id="pQl-Ba-Ahu"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="249" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uU7-L7-TPz">
+                        <rect key="frame" x="75" y="49" width="300" height="36.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wmn-54-ef2" customClass="ImageViewWithURLString" customModule="TwitterTweets" customModuleProvider="target">
+                        <rect key="frame" x="15" y="15" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="hJm-4u-I6w"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="hak-ZT-Uyd" secondAttribute="trailing" constant="10" id="540-FW-yya"/>
+                    <constraint firstItem="6eN-zO-Rg1" firstAttribute="top" secondItem="hak-ZT-Uyd" secondAttribute="bottom" constant="5" id="64X-p4-OrR"/>
+                    <constraint firstItem="uU7-L7-TPz" firstAttribute="trailing" secondItem="6eN-zO-Rg1" secondAttribute="trailing" id="Ac2-qh-6jc"/>
+                    <constraint firstItem="hak-ZT-Uyd" firstAttribute="top" secondItem="wmn-54-ef2" secondAttribute="top" id="C1k-mc-xjX"/>
+                    <constraint firstItem="hak-ZT-Uyd" firstAttribute="leading" secondItem="wmn-54-ef2" secondAttribute="trailing" constant="15" id="Cbc-hx-DfD"/>
+                    <constraint firstItem="uU7-L7-TPz" firstAttribute="top" secondItem="6eN-zO-Rg1" secondAttribute="bottom" constant="8" id="GH0-jv-QmK"/>
+                    <constraint firstAttribute="bottom" secondItem="SrO-jg-pNH" secondAttribute="bottom" constant="20" id="I8m-8M-S46"/>
+                    <constraint firstItem="wmn-54-ef2" firstAttribute="top" secondItem="OUc-8L-0X2" secondAttribute="top" constant="15" id="MNm-eM-301"/>
+                    <constraint firstItem="SrO-jg-pNH" firstAttribute="top" secondItem="uU7-L7-TPz" secondAttribute="bottom" constant="5" id="NnR-Ff-rB0"/>
+                    <constraint firstItem="wmn-54-ef2" firstAttribute="leading" secondItem="OUc-8L-0X2" secondAttribute="leading" constant="15" id="Zo6-uz-V3A"/>
+                    <constraint firstItem="uU7-L7-TPz" firstAttribute="leading" secondItem="hak-ZT-Uyd" secondAttribute="leading" id="chZ-WK-Pxq"/>
+                    <constraint firstItem="SrO-jg-pNH" firstAttribute="centerX" secondItem="uU7-L7-TPz" secondAttribute="centerX" id="czK-H8-a8e"/>
+                    <constraint firstItem="SrO-jg-pNH" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="uU7-L7-TPz" secondAttribute="trailing" id="dik-dm-siP"/>
+                    <constraint firstItem="6eN-zO-Rg1" firstAttribute="leading" secondItem="hak-ZT-Uyd" secondAttribute="leading" id="iAX-nG-0TN"/>
+                    <constraint firstAttribute="trailing" secondItem="6eN-zO-Rg1" secondAttribute="trailing" constant="10" id="tkE-dE-FBZ"/>
+                    <constraint firstItem="wmn-54-ef2" firstAttribute="width" secondItem="wmn-54-ef2" secondAttribute="height" multiplier="1:1" id="tq4-WR-Mfl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="7pS-qZ-61W"/>
+            <connections>
+                <outlet property="imageAvatar" destination="wmn-54-ef2" id="2BR-BW-n3t"/>
+                <outlet property="imageTweet" destination="SrO-jg-pNH" id="7ZP-yh-7Aq"/>
+                <outlet property="imageTweetHeightConstraint" destination="pQl-Ba-Ahu" id="peb-es-Y5B"/>
+                <outlet property="imageTweetWidthConstraint" destination="5NV-Ez-GW0" id="jvH-Tn-wap"/>
+                <outlet property="labelDate" destination="6eN-zO-Rg1" id="t1k-Oi-YDu"/>
+                <outlet property="labelDescription" destination="uU7-L7-TPz" id="3j0-w4-BpA"/>
+                <outlet property="labelUsername" destination="hak-ZT-Uyd" id="06Y-Cv-34T"/>
+            </connections>
+            <point key="canvasLocation" x="57.5" y="135.5"/>
+        </tableViewCell>
+    </objects>
+</document>
